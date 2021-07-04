@@ -10,6 +10,9 @@
 # Usage
 
 1. clone this repository
+   ```shell
+   git clone --recursive https://github.com/Sologala/pyStag.git
+   ```
 
 2. Find out your `numpy include` Path 	
 
