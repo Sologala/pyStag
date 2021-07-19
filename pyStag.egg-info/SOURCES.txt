@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+pyStag.egg-info/PKG-INFO
+pyStag.egg-info/SOURCES.txt
+pyStag.egg-info/dependency_links.txt
+pyStag.egg-info/not-zip-safe
+pyStag.egg-info/requires.txt
+pyStag.egg-info/top_level.txt

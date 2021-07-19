@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyStag
+Version: 0.0.1
+Summary: warpping of Stag, a fiducial marker detection system
+Home-page: None
+Author: Sologala
+Author-email: dawsonwen123@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+License-File: LICENSE
+
+description
+

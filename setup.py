@@ -5,7 +5,7 @@ import glob
 import shutil
 
 __version__ = "0.0.1"
-__library_file__ = './lib/pyStag.cpython-38-darwin.so'
+__library_file__ = './lib/Release/pyStag.cp38-win_amd64.pyd'
 
 
 class CopyLibFile(install):
@@ -38,7 +38,7 @@ setup(
     author_email="dawsonwen123@gmail.com",
     url="None",
     description="warpping of Stag, a fiducial marker detection system",
-    long_description="",
+    long_description="description",
     extras_require={"test": "pytest"},
     # Currently, build_ext only provides an optional "highest supported C++
     # level" feature, but in the future it may provide more features.

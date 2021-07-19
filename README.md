@@ -49,17 +49,21 @@
 
    
 
-5. then you will got a `pyStag.cpython-3*-**.so`  in `./lib`
+5. then you will got a `pyStag.cpython-3*-**.pyd`  in `./lib`
 
 6. **install Python package**
+- open cmd
+- cd to pyStag directory
 
    ```
    python setup.py install 
    ```
+You must import your opencv dll in your site-packages directory. ( users/Anaconda/Lib/site-packages for Anaconda)
+If **import error DLL load failes while importing pyStag**: check dependencies with [DependencyWalker](https://www.dependencywalker.com/).
 
 #  Test
 
-```python
+```
 python test_warpper.py
 ```
 

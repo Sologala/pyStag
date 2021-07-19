@@ -15,6 +15,7 @@ Stag::Stag(int libraryHD, int inErrorCorrection, bool inKeepLogs) {
   fillCodeLocations();
   decoder = Decoder(libraryHD);
 }
+
 std::vector<std::vector<std::vector<double>>> Stag::getContours() {
 
   std::vector<std::vector<std::vector<double>>> ret;
@@ -27,6 +28,7 @@ std::vector<std::vector<std::vector<double>>> Stag::getContours() {
   }
   return ret;
 }
+
 std::vector<int> Stag ::getIds() {
   std::vector<int> ret;
   for (auto marker : markers) {
