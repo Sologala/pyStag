@@ -1,4 +1,4 @@
-
+cmake_minimum_required(VERSION 3.20)
 project(Stag)
 
 IF(NOT CMAKE_BUILD_TYPE)
@@ -36,6 +36,7 @@ add_library(
 )
 target_link_libraries(
     LibStag
+    PRIVATE
     ${OpenCV_LIBS}
 )
 
@@ -50,7 +51,7 @@ include_directories(
     # "# You need to change this follow Path  to  your own Path. "
     # "# You need to change this follow Path  to  your own Path. "
     
-    /Users/bytedance/anaconda3/lib/python3.8/site-packages/numpy/core/include
+    /Users/samy.grisard/Anaconda3/lib/site-packages/numpy/core/include
 )
 
 add_subdirectory(pybindSrc/pybind11)
@@ -61,6 +62,7 @@ pybindSrc/opencv2numpy/converter.cpp
 )
 
 target_link_libraries(pyStag 
+PRIVATE
 ${OpenCV_LIBS}
 LibStag
 )
@@ -75,5 +77,6 @@ add_executable(
 
 target_link_libraries(
     testrun
+    PRIVATE
     LibStag
 )

@@ -1,6 +1,6 @@
-#include "../src/Marker.h"
-#include "../src/Quad.h"
-#include "../src/Stag.h"
+#include "Marker.h"
+#include "Quad.h"
+#include "Stag.h"
 #include "opencv2numpy/converter.h"
 #include <pybind11/cast.h>
 #include <pybind11/complex.h>

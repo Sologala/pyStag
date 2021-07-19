@@ -1,11 +1,15 @@
 #app
+__pycache__/
 /app/
+/build/
 /Vocabulary/*
 /build/
 /.vscode/
 /lib/
 /datasets/
 /ref/marker_image/
+pyStag.egg-info/
+
 
 
 
