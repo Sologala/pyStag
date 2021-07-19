@@ -1,5 +1,5 @@
 #app
-/__pycache__/
+__pycache__/
 /app/
 /build/
 /Vocabulary/*
@@ -8,7 +8,7 @@
 /lib/
 /datasets/
 /ref/marker_image/
-/pyStag.egg-info/
+pyStag.egg-info/
 
 
 
