@@ -58,8 +58,8 @@
    ```
    python setup.py install 
    ```
-You must import your opencv dll in your site-packages directory. ( users/Anaconda/Lib/site-packages for Anaconda)
-If **import error DLL load failes while importing pyStag**: check dependencies with [DependencyWalker](https://www.dependencywalker.com/).
+You must import your opencv dll in your site-packages directory. ("users/Anaconda/Lib/site-packages" for Anaconda).
+If **import error DLL load failed while importing pyStag**: check dependencies with [DependencyWalker](https://www.dependencywalker.com/).
 
 #  Test
 
