@@ -37,9 +37,9 @@ python test_warpper.py
 
 The script will detect `00003.png` and place its detection result at `img-res.png`
 
- <img src="./00003.png" width = "300" height = "300" alt="target-img" align=left /> 
+ <img src="./00003.png" width = "200" height = "300" alt="target-img" align=left /> 
 
-<img src="./img-res.png" width = "300" height = "300" alt="target-img" align=center />
+<img src="./img-res.png" width = "200" height = "300" alt="target-img" align=center />
 
 
 
