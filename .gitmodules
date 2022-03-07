@@ -1,0 +1,7 @@
+[submodule "pybind11"]
+	path = pybind11
+	url = https://github.com/pybind/pybind11.git
+	branch = stable
+[submodule "pybind11_opencv_numpy"]
+	path = pybind11_opencv_numpy
+	url = https://github.com/edmBernard/pybind11_opencv_numpy.git
