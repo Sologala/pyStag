@@ -1,4 +1,6 @@
 #app
+
+
 /app/
 /Vocabulary/*
 /build/
@@ -6,6 +8,7 @@
 /lib/
 /datasets/
 /ref/marker_image/
+pyStag.egg-info
 
 
 

@@ -1,7 +1,7 @@
-#include "../src/Marker.h"
-#include "../src/Quad.h"
-#include "../src/Stag.h"
-#include "opencv2numpy/converter.h"
+#include "pybind11_opencv_numpy/ndarray_converter.h"
+#include "src/Marker.h"
+#include "src/Quad.h"
+#include "src/Stag.h"
 #include <pybind11/cast.h>
 #include <pybind11/complex.h>
 #include <pybind11/pybind11.h>

@@ -4,8 +4,9 @@
 
 #include <chrono>
 #include <ctime>
-#include <sys/_types/_int64_t.h>
-#include <sys/_types/_timespec.h>
+#include <sys/types.h>
+// #include <sys/_types/_int64_t.h>
+// #include <sys/_types/_timespec.h>
 
 class Timer {
 private:

@@ -1,69 +1,45 @@
 # This is a simple python binding of [Stag Fiducial Marker System](https://github.com/bbenligiray/stag)
 
-# Dependency
 
-1. **numpy** `pip install numpy`
-2. **cmake**
-3. **Pybind11** `pip install pybind11`
+# Install
 
-
-# Usage
-
-1. clone this repository
+1.clone this repository
    ```shell
    git clone --recursive https://github.com/Sologala/pyStag.git
    ```
+2.Build with python setup.py 
 
-2. Find out your `numpy include` Path 	
+```shell
+python setup.py develop
 
-   ```python
-   In [1]: import numpy
-   In [2]: numpy.get_include()
-   Out[2]: '/Users/bytedance/anaconda3/lib/python3.8/site-packages/numpy/core/include'
-   ```
+```
+The above command line will build `pyStag` at local folder. Alternatively, you can install it by
+```shell
+python setup.py install --record manifest.txt
+```
+It will record all installed file in `manifest.txt`
 
-3. Fill `numpy include` to `CmakeLists.txt`
+# Uninstall 
+```shell
+xargs  rm < manifest.txt
+```
+Or, you can use `pip`
 
-   ```cmake
-   include_directories(
-       pybindSrc/opencv2numpy
-       # You need to change this follow Path  to  your own Path. 
-       # "# You need to change this follow Path  to  your own Path. "
-       # "# You need to change this follow Path  to  your own Path. "
-       # "# You need to change this follow Path  to  your own Path. "
-       # "# You need to change this follow Path  to  your own Path. "
-       
-       /Users/bytedance/anaconda3/lib/python3.8/site-packages/numpy/core/include
-   )
-   ```
+```shell
+pip uninstall pyStag
+```   
 
-   
-
-4. make
-
-   ```shell
-   mkdir build 
-   cmake ..
-   make
-   ```
-
-   
-
-5. then you will got a `pyStag.cpython-3*-**.so`  in `./lib`
-
-6. **install Python package**
-
-   ```
-   python setup.py install 
-   ```
-
-#  Test
+#  Test and Usage 
 
 ```python
 python test_warpper.py
 ```
 
+The script will detect `00003.png` and place its detection result at `img-res.png`
 
+ <img src="./00003.png" width = "300" height = "300" alt="target-img" align=left /> 
+
+<img src="./img-res.png" width = "300" height = "300" alt="target-img" align=center />
 
 
 
